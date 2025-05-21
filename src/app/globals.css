@@ -1,4 +1,6 @@
 @import './themes/typography.css';
+@import './themes/variables.css';
+@import './themes/animations.css';
 
 html,
 body {
