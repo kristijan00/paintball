@@ -1,0 +1,25 @@
+@use '../../app/themes/mixins.scss'as *;
+@use '../../app/themes/animations.css'as *;
+
+.aboutContainer {
+  position        : relative;
+  background-color: var(--color-section);
+  height          : 100vh;
+  padding-top     : 12vh;
+
+  .aboutSubContainer {
+    display              : grid;
+    grid-template-columns: 1fr 0.7fr;
+    gap                  : 2rem;
+  }
+
+  // Overlay
+  @include overlay(rgba(0, 0, 0, 0.25));
+
+  .title {
+    color      : var(--color-text-overlays);
+    text-align : center;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+    margin-top : 3rem
+  }
+}

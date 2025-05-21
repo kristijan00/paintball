@@ -1,0 +1,52 @@
+@mixin overlay($color: rgba(0, 0, 0, 0.45)) {
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: $color;
+    z-index: 0;
+    border-radius: inherit;
+  }
+
+  >* {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+@mixin fade-bg($direction: to right, $from: var(--color-heading), $to: rgba(26, 26, 26, 0), $width: 80%) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: $width;
+  background: linear-gradient($direction, $from, $to);
+  z-index: 1;
+  pointer-events: none;
+}
+
+@mixin button-base(
+  $bg: var(--color-cta),
+  $color: #fff,
+  $hover-color: black,
+  $border-radius: 4px
+) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 4rem;
+  width: 25%;
+  background-color: $bg;
+  color: $color;
+  border-radius: $border-radius;
+  text-decoration: none;
+  transition: all 0.3s;
+  font-size: 1rem;
+
+  &:hover {
+    color: $hover-color;
+    transform: scale(1.05);
+  }
+}

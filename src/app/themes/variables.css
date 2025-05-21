@@ -1,0 +1,29 @@
+:root {
+  --color-primary: #556B2F
+    /* Dark Olive Green */
+  ;
+  --color-section: #F5F5F0
+    /* Tan */
+  ;
+  --color-header-footer: #2C2F33
+    /* Dark Gray */
+  ;
+  --color-text-overlays: #1A1A1A
+    /* Dark Gray */
+  ;
+  --color-cta: #8B0000
+    /* Dark Red */
+  ;
+  --color-neutral: #D6CBA2
+    /* Light Tan */
+  ;
+  --color-icon-hover: #D6CBA2
+    /* Light Tan */
+  ;
+  --color-accent-highlight: #E1C340
+    /* Light Yellow */
+  ;
+  --color-heading: #BDAF61;
+  /* Warm tactical gold */
+  /* Sophisticated and clean */
+}
