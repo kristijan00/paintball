@@ -1,0 +1,42 @@
+.galleryContainer {
+  position        : relative;
+  display         : flex;
+  flex-direction  : column;
+  height          : 100vh;
+  padding-top     : 20vh;
+  background-color: var(--color-neutral);
+
+  .image {
+    object-fit: cover;
+  }
+
+  .arrowButtonContainer {
+    margin: 0 auto;
+  }
+
+  .arrowButton {
+    margin    : 15px 15px 15px 0;
+    opacity   : 0.7;
+    transition: opacity 0.3s ease-in-out;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .galleryContainer {
+    padding-top: 10vh;
+
+    .arrowButton {
+      opacity   : 1;
+      transition: all 0.3s ease-in;
+
+      &:active {
+        transform: scale(0.92);
+        color: white;
+      }
+    }
+  }
+}
