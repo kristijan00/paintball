@@ -71,6 +71,7 @@
     flex-direction : row;
     justify-content: space-between;
     padding        : 20px 30px;
+    height         : 10vh;
 
     .logoContainer {
       display        : flex;
@@ -95,7 +96,7 @@
 
       .headerNav {
         position        : absolute;
-        top             : 12vh;
+        top             : 10vh;
         /* Hidden by default */
         left            : 0;
         width           : 100%;
