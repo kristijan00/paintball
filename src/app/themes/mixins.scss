@@ -33,6 +33,9 @@
   $hover-color: black,
   $border-radius: 4px
 ) {
+  font-family: var(--font-heading);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -44,6 +47,7 @@
   text-decoration: none;
   transition: all 0.3s;
   font-size: 1rem;
+  font-weight: 600;
 
   &:hover {
     color: $hover-color;

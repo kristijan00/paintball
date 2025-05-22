@@ -1,16 +1,25 @@
 import type { Metadata } from 'next';
-import { Geist, Geist_Mono } from 'next/font/google';
+import { Bebas_Neue, Oswald, Roboto } from 'next/font/google';
 import './globals.css';
 import Header from '@/components/header/header';
 
-const geistSans = Geist({
-  variable: '--font-geist-sans',
+const bebas = Bebas_Neue({
+  variable: '--font-hero',
   subsets: ['latin'],
+  weight: '400',
 });
 
-const geistMono = Geist_Mono({
-  variable: '--font-geist-mono',
+const oswald = Oswald({
+  variable: '--font-heading',
   subsets: ['latin'],
+  weight: ['400', '500', '600'],
+});
+
+const roboto = Roboto({
+  variable: '--font-body',
+  subsets: ['latin'],
+  weight: ['400', '500', '600'],
+  display: 'swap',
 });
 
 export const metadata: Metadata = {
@@ -30,7 +39,7 @@ const RootLayout = ({
 }>) => {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body className={`${bebas.variable} ${oswald.variable} ${roboto.variable}`}>
         <Header />
         {children}
       </body>
