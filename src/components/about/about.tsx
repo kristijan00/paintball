@@ -2,13 +2,13 @@
 
 import { useState } from 'react';
 import styles from './about.module.scss';
-import { LocateFixed, ShieldHalf } from 'lucide-react';
+import { LocateFixed, ShieldHalf, Users } from 'lucide-react';
 
 const sections = [
   {
     title: 'O NAMA',
     content: 'Paintball je uzbudljiva i dinamična igra koja se igra u timovima. Naša ekipa je strastvena prema ovom sportu i posvećena je pružanju najboljeg iskustva igračima svih nivoa veština.',
-    icon: <ShieldHalf size={100} color="var(--color-neutral)" className={styles.logo} />,
+    icon: <Users size={100} color="var(--color-neutral)" className={styles.logo} />,
 
   },
   {

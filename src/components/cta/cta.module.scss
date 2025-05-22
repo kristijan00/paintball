@@ -1,0 +1,54 @@
+@use '../../app/themes/mixins.scss'as *;
+
+.ctaContainer {
+  position  : relative;
+  padding   : 3rem 2rem;
+  text-align: center;
+  background: url('../../../public/camo.png') center center;
+  color     : white;
+
+  .button {
+    margin: auto;
+    @include button-base();
+  }
+
+  .ctaHeader {
+    font-family  : var(--font-body);
+    color        : var(--color-text-overlay);
+    font-size    : 2rem;
+    font-weight  : 700;
+    line-height  : 1.3;
+    text-shadow  : 1px 1px 3px rgba(0, 0, 0, 0.4);
+    margin-bottom: 20px;
+  }
+
+  .ctaSubheader {
+    font-family  : var(--font-body);
+    color        : var(--color-text-overlay);
+    font-size    : 1.4rem;
+    font-weight  : 400;
+    line-height  : 1.3;
+    text-shadow  : 1px 1px 3px rgba(0, 0, 0, 0.4);
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .ctaContainer {
+    padding   : 2rem 1rem;
+    text-align: center;
+
+    .ctaHeader {
+      font-size: 1.5rem;
+    }
+
+    .ctaSubheader {
+      font-size: 1rem;
+    }
+
+    .button {
+      padding: 0.75rem 2rem;
+      @include button-mobile(80%);
+    }
+  }
+}
