@@ -32,6 +32,7 @@ const Gallery = () => {
 
   return (
     <section className={styles.galleryContainer}>
+      <h2 className={styles.title}>Trenuci s bojišta</h2>
       <div ref={sliderRef} className="keen-slider">
         {images.map((src, i) => (
           <div className="keen-slider__slide" key={i}>
