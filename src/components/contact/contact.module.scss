@@ -1,0 +1,93 @@
+@use '../../app/themes/mixins.scss'as *;
+@use '../../app/themes/animations.css'as *;
+
+.contactContainer {
+  position       : relative;
+  height         : 100vh;
+  padding-top    : 12vh;
+  background     : url('../../../public/hero-8.jpg') center center;
+  background-size: cover;
+
+  .title {
+    font-family: var(--font-heading);
+    color      : white;
+    padding-top: 2rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+    text-align : center;
+  }
+
+  .contactForm {
+    display        : flex;
+    flex-direction : column;
+    justify-content: center;
+    align-items    : center;
+    gap            : 1.5rem;
+    margin         : 2rem auto 0;
+    padding        : 3.5rem 2rem;
+    width          : 80%;
+    height         : 80%;
+    max-width      : 600px;
+    backdrop-filter: blur(1px);
+
+    .inputGroup {
+      width: 70%;
+
+      &:hover>.icon {
+        color: var(--color-accent-highlight);
+      }
+
+      &:focus-within>.icon {
+        color: var(--color-cta);
+      }
+
+      .icon {
+        color       : var(--color-neutral);
+        margin-right: 1rem;
+      }
+    }
+
+    .button {
+      margin-top: 1rem;
+      width     : 70%;
+      padding   : 0.6rem 4rem !important;
+      @include button-base();
+    }
+
+    .formStatus {
+      font-family: var(--font-body);
+      color      : white;
+    }
+
+    @include overlay(rgba(30, 30, 30, 0.8));
+  }
+
+  @include overlay(rgba(0, 0, 0, 0.55));
+}
+
+@media (max-width: 600px) {
+  .contactContainer {
+    padding-top: 10vh;
+
+    .contactForm {
+      width  : 90%;
+      padding: 2rem 1rem;
+      margin : 2rem auto 0;
+
+      .inputGroup {
+        width: 90%;
+
+        &:hover>.icon {
+          color: var(--color-neutral);
+        }
+
+        &:focus-within>.icon {
+          color: var(--color-cta);
+        }
+      }
+
+      .button {
+        @include button-mobile(90%);
+      }
+    }
+  }
+}

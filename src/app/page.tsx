@@ -3,6 +3,7 @@ import Hero from '@/components/hero/hero';
 import About from '@/components/about/about';
 import CTA from '@/components/cta/cta';
 import Gallery from '@/components/gallery/gallery';
+import Contact from '@/components/contact/contact';
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       <About />
       <CTA />
       <Gallery />
+      <Contact />
     </main>
   );
 };

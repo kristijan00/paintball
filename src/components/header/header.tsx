@@ -39,10 +39,9 @@ const Header = () => {
         </button>
         <nav className={`${styles.headerNav} ${menuOpen ? styles.open : ''}`}>
           <ul className={styles.navList}>
-            <li className={styles.navItem} onClick={handleNavItemClick}><Link className={styles.link} href="/about">Home</Link></li>
-            <li className={styles.navItem} onClick={handleNavItemClick}><Link className={styles.link} href="/about">About</Link></li>
-            <li className={styles.navItem} onClick={handleNavItemClick}><Link className={styles.link} href="/about">Cjenik</Link></li>
-            <li className={styles.navItem} onClick={handleNavItemClick}><Link className={styles.link} href="/about">Kontakt</Link></li>
+            <li className={styles.navItem} onClick={handleNavItemClick}><Link className={styles.link} href="/">Home</Link></li>
+            <li className={styles.navItem} onClick={handleNavItemClick}><Link className={styles.link} href="/cjenik">Cjenik</Link></li>
+            <li className={styles.navItem} onClick={handleNavItemClick}><Link className={styles.link} href="/faq">Faq</Link></li>
           </ul>
         </nav>
       </div>

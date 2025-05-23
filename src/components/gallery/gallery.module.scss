@@ -4,10 +4,11 @@
   flex-direction  : column;
   height          : 100vh;
   padding-top     : 12vh;
-  background-color: var(--color-neutral);
+  background-color: var(--color-section);
 
   .image {
-    object-fit: cover;
+    object-fit     : cover;
+    object-position: center;
   }
 
   .arrowButtonContainer {
@@ -18,7 +19,7 @@
     margin                     : 15px 15px 15px 0;
     opacity                    : 0.7;
     transition                 : opacity 0.3s ease-in-out;
-    color                      : black;
+    color                      : var(--color-cta);
     -webkit-tap-highlight-color: transparent; // Prevent blue highlight on iOS
     outline                    : none;
 

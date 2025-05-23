@@ -6,11 +6,10 @@ import Image from 'next/image';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
 
 const images = [
-  '/character-1.jpg',
-  '/character-2.png',
   '/hero-1.jpg',
   '/hero-2.jpg',
   '/hero-3.jpg',
+  '/hero-5.jpg',
 ];
 
 const Gallery = () => {
@@ -34,10 +33,10 @@ const Gallery = () => {
     <section className={styles.galleryContainer}>
       <h2 className={styles.title}>Trenuci s bojišta</h2>
       <div ref={sliderRef} className="keen-slider">
-        {images.map((src, i) => (
+        {images.map((imgsSrc, i) => (
           <div className="keen-slider__slide" key={i}>
             <Image
-              src={src}
+              src={imgsSrc}
               alt={`Gallery ${i}`}
               width={800}
               height={500}
