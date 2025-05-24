@@ -7,19 +7,19 @@ import { LocateFixed, ShieldHalf, Users } from 'lucide-react';
 const sections = [
   {
     title: 'O NAMA',
-    content: 'Paintball je uzbudljiva i dinamična igra koja se igra u timovima. Naša ekipa je strastvena prema ovom sportu i posvećena je pružanju najboljeg iskustva igračima svih nivoa veština.',
+    content: 'Paintball je uzbudljiva i dinamična timska igra. Naš tim je strastven prema ovom sportu i posvećen pružanju najboljeg mogućeg iskustva igračima svih nivoa veština.',
     icon: <Users size={100} color="var(--color-neutral)" className={styles.logo} />,
 
   },
   {
     title: 'LOKACIJA',
-    content: 'Naša paintball arena se nalazi u prelepom prirodnom okruženju, idealnom za igru. Uživajte u uzbudljivim scenarijima i izazovima koje pruža naš teren.',
+    content: 'Naša paintball arena nalazi se u prelepom prirodnom okruženju, idealnom za igru. Uživajte u uzbudljivim scenarijima i izazovima koje naš teren pruža.',
     icon: <LocateFixed size={100} color="var(--color-neutral)" className={styles.logo} />,
 
   },
   {
     title: 'VELIČINA TEAM-A',
-    content: 'Naša ekipa može primiti do 20 igrača po timu, što omogućava dinamične i uzbudljive mečeve. Bez obzira na to da li ste početnik ili iskusni igrač, imamo nešto za svakoga.',
+    content: 'Naša ekipa može primiti do 20 igrača po timu, što omogućava dinamične i uzbudljive mečeve. Bez obzira na to da li ste početnik ili iskusan igrač, imamo nešto za svakoga.',
     icon: <ShieldHalf size={100} color="var(--color-neutral)" className={styles.logo} />,
   },
 ];

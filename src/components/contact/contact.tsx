@@ -76,7 +76,7 @@ const Contact = () => {
       <form ref={form} onSubmit={sendEmail} className={styles.contactForm} method="POST">
         <Box className={styles.inputGroup} sx={{ display: 'flex', alignItems: 'flex-end' }}>
           <User size={22} className={styles.icon} />
-          <TextField id="input-with-sx" label="Ima i prezime" name="fullName" fullWidth sx={{
+          <TextField id="input-with-sx" required label="Ima i prezime" name="fullName" fullWidth sx={{
             '& .MuiInputBase-input': { color: 'white' },
             '& .MuiInputLabel-root': { color: 'white' },
             '& .MuiInput-underline:before': { borderBottomColor: 'white' },
@@ -100,7 +100,7 @@ const Contact = () => {
         </Box>
         <Box className={styles.inputGroup} sx={{ display: 'flex', alignItems: 'flex-end' }}>
           <Mail size={22} className={styles.icon} />
-          <TextField id="input-with-sx" label="E-mail" name="email" fullWidth variant="standard" sx={{
+          <TextField id="input-with-sx" required label="E-mail" name="email" fullWidth variant="standard" sx={{
             '& .MuiInputBase-input': { color: 'white' },
             '& .MuiInputLabel-root': { color: 'white' },
             '& .MuiInputLabel-root.Mui-focused': { color: 'white' },
@@ -129,6 +129,7 @@ const Contact = () => {
           <TextField
             id="standard-multiline-static"
             label="Poruka"
+            required
             multiline
             rows={4}
             fullWidth
@@ -166,6 +167,7 @@ const Contact = () => {
             label={`${mathQuestion.a} + ${mathQuestion.b} = ?`}
             variant="standard"
             type="number"
+            required
             value={userAnswer}
             onChange={e => setUserAnswer(e.target.value)}
             sx={{
