@@ -4,6 +4,7 @@ import About from '@/components/about/about';
 import CTA from '@/components/cta/cta';
 import Gallery from '@/components/gallery/gallery';
 import Contact from '@/components/contact/contact';
+import Location from '@/components/location/location';
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <CTA />
       <Gallery />
       <Contact />
+      <Location />
     </main>
   );
 };
