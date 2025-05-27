@@ -8,7 +8,7 @@ const Footer = () => {
     <footer className={styles.footerContainer}>
       <div className={styles.footerUpper}>
         <div className={styles.footerInfo}>
-          <LocateFixed size={30} className={styles.logo} />
+          <LocateFixed size={24} className={styles.logo} />
           <div className={styles.content}>
             <h4>Adresa</h4>
             <p>GromZone, Ul. dr. Franje Tuđmana 5, 35000, Gromačnik</p>
