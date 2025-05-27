@@ -39,7 +39,8 @@ const Footer = () => {
         </div>
       </div>
       <div className={styles.footerLower}>
-        <p>&copy; {new Date().getFullYear()} GromZone. Sva prava pridržana. Web dizajn i razvoj: <a href="https://www.linkedin.com/in/kristijan-dakovic-5a5b41193/" target="_blank" rel="noopener noreferrer">Kristijan Đaković</a></p>
+        <p>&copy; {new Date().getFullYear()} GromZone. Sva prava pridržana.</p>
+        <p>Web dizajn i razvoj: <a href="https://www.linkedin.com/in/kristijan-dakovic-5a5b41193/" target="_blank" rel="noopener noreferrer">Kristijan Đaković</a></p>
       </div>
     </footer>
   );
