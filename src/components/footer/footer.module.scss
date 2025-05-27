@@ -1,0 +1,165 @@
+.footerContainer {
+  position: relative;
+  height  : 26vh;
+  color   : white;
+
+  .footerUpper {
+    display         : flex;
+    justify-content : space-around;
+    height          : 77%;
+    padding-top     : 0.5rem;
+    background-color: var(--color-footer);
+
+    .footerInfo {
+      display    : flex;
+      width      : 20vw;
+      font-family: var(--font-body);
+      align-items: center;
+
+      .logo {
+        margin-right : 0.7rem;
+        margin-bottom: 0.7rem;
+      }
+
+      .content {
+        h4 {
+          font-size    : 1.3rem;
+          font-weight  : 500;
+          margin-bottom: 0.5rem;
+        }
+
+        p {
+          font-weight: 400;
+          font-size  : 0.9rem;
+          line-height: 1.5;
+        }
+
+        a {
+          font-weight: 400;
+          font-size  : 0.9rem;
+          line-height: 1.5;
+          transition : color 0.3s ease-in;
+
+          &:hover {
+            color: var(--color-accent-highlight);
+          }
+        }
+      }
+    }
+
+    .socials {
+      display        : flex;
+      justify-content: space-between;
+
+      align-items: center;
+      width      : 10vw;
+
+      .icon {
+        cursor    : pointer;
+        transition: all 0.3s ease-in-out;
+        opacity   : 0.8;
+        font-size : 21px;
+
+        &:hover {
+          opacity: 1;
+          scale  : 1.1;
+        }
+      }
+    }
+  }
+
+  .footerLower {
+    text-align      : center;
+    display         : flex;
+    justify-content : center;
+    align-items     : center;
+    padding         : 0.5rem 0;
+    font-family     : var(--font-body);
+    height          : 23%;
+    font-size       : 0.8rem;
+    font-weight     : 400;
+    background-color: var(--color-footer-darker);
+
+    a {
+      color     : white;
+      transition: color 0.3s ease-in;
+
+      &:hover {
+        color: var(--color-accent-highlight);
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .footerContainer {
+    height: auto;
+
+    .footerUpper {
+      flex-direction : column;
+      align-items    : center;
+      justify-content: space-between;
+      padding        : 1.5rem 0;
+
+      .footerInfo {
+        width        : 80vw;
+        margin-bottom: 1rem;
+
+        .content {
+          h4 {
+            font-size: 1.2rem;
+          }
+
+          p,
+          a {
+            font-size: 0.8rem;
+          }
+
+          a {
+            &:hover {
+              color: white;
+            }
+
+            &:active {
+              color: var(--color-accent-highlight);
+            }
+          }
+        }
+      }
+
+      .socials {
+        width          : auto;
+        margin-top     : 1rem;
+        justify-content: center;
+
+        .icon {
+          font-size: 18px;
+          opacity  : 1;
+          margin   : 0 0.5rem;
+
+          &:hover {
+            scale: 1;
+          }
+
+          &:active {
+            scale: 1.2;
+          }
+        }
+      }
+    }
+
+    .footerLower {
+      font-size: 0.7rem;
+
+      a {
+        &:hover {
+          color: white;
+        }
+
+        &:active {
+          color: var(--color-accent-highlight);
+        }
+      }
+    }
+  }
+}

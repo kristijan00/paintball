@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Bebas_Neue, Oswald, Roboto } from 'next/font/google';
 import './globals.css';
 import Header from '@/components/header/header';
+import Footer from '@/components/footer/footer';
 
 const bebas = Bebas_Neue({
   variable: '--font-hero',
@@ -42,6 +43,7 @@ const RootLayout = ({
       <body className={`${bebas.variable} ${oswald.variable} ${roboto.variable}`}>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
