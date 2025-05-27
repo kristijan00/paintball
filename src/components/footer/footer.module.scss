@@ -7,18 +7,24 @@
     display         : flex;
     justify-content : space-around;
     height          : 77%;
-    padding-top     : 0.5rem;
+    padding         : 0.5rem 4rem;
     background-color: var(--color-footer);
 
     .footerInfo {
       display    : flex;
       width      : 20vw;
-      font-family: var(--font-body);
+      font-family: var(--font-heading);
       align-items: center;
 
       .logo {
         margin-right : 0.7rem;
         margin-bottom: 0.7rem;
+        transition   : color 0.3s ease-in;
+        color        : var(--color-neutral);
+
+        &:hover {
+          color: var(--color-cta);
+        }
       }
 
       .content {
@@ -105,6 +111,19 @@
         width        : 80vw;
         margin-bottom: 1rem;
 
+        .logo {
+          margin-right : 1rem;
+          margin-bottom: 0;
+
+          &:hover {
+            color: var(--color-neutral);
+          }
+
+          &:active {
+            color: var(--color-cta);
+          }
+        }
+
         .content {
           h4 {
             font-size: 1.2rem;
@@ -150,6 +169,7 @@
 
     .footerLower {
       font-size: 0.7rem;
+      padding  : 1rem 0;
 
       a {
         &:hover {

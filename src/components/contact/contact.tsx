@@ -8,6 +8,8 @@ import React, { useRef, useState, useEffect } from 'react';
 import emailjs from '@emailjs/browser';
 import Loader from '@/components/loader/loader';
 import Popup from '@/components/popup/popup';
+import { motion } from 'framer-motion';
+import { useInView } from 'framer-motion';
 
 const Contact = () => {
   const form = useRef<HTMLFormElement>(null);
@@ -17,6 +19,8 @@ const Contact = () => {
   const [showPopup, setShowPopup] = useState(false);
   const [popupMessage, setPopupMessage] = useState('');
   const [popupTitle, setPopupTitle] = useState('');
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, margin: '-50px' });
 
   // Generate new question
   useEffect(() => {
@@ -71,9 +75,12 @@ const Contact = () => {
   };
 
   return (
-    <section className={styles.contactContainer} id="contact">
+    <section className={styles.contactContainer} id="contact" ref={ref}>
       <h2 className={styles.title}>Kontaktirajte nas</h2>
-      <form ref={form} onSubmit={sendEmail} className={styles.contactForm} method="POST">
+      <motion.form ref={form} onSubmit={sendEmail} className={styles.contactForm} method="POST"
+        initial={{ opacity: 0, y: 50 }}
+        animate={isInView ? { opacity: 1, y: 0 } : {}}
+        transition={{ duration: 0.5, ease: 'easeIn' }}>
         <Box className={styles.inputGroup} sx={{ display: 'flex', alignItems: 'flex-end' }}>
           <User size={22} className={styles.icon} />
           <TextField id="input-with-sx" required label="Ima i prezime" name="fullName" fullWidth sx={{
@@ -192,7 +199,7 @@ const Contact = () => {
             }}
           /></Box>
         <FormButton className={styles.button} text={'Pošalji'} type={'submit'} />
-      </form>
+      </motion.form>
       {showPopup && (
         <Popup
           title={popupTitle}

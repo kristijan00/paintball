@@ -8,9 +8,8 @@
   color     : white;
 
   .button {
-    margin: auto;
-    width: 25%;
-    cursor: pointer;
+    margin   : auto;
+    width    : 25%;
     @include button-base();
   }
 

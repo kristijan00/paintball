@@ -8,7 +8,7 @@ const Footer = () => {
     <footer className={styles.footerContainer}>
       <div className={styles.footerUpper}>
         <div className={styles.footerInfo}>
-          <LocateFixed size={30} color="var(--color-neutral)" className={styles.logo} />
+          <LocateFixed size={30} className={styles.logo} />
           <div className={styles.content}>
             <h4>Adresa</h4>
             <p>GromZone, Ul. dr. Franje Tuđmana 5, 35000, Gromačnik</p>
@@ -16,7 +16,7 @@ const Footer = () => {
         </div>
 
         <div className={styles.footerInfo}>
-          <Phone size={24} color="var(--color-neutral)" className={styles.logo} />
+          <Phone size={24} className={styles.logo} />
           <div className={styles.content}>
             <h4>Telefon</h4>
             <a href={'tel:0991231234'}>099-123-1234</a>
@@ -24,7 +24,7 @@ const Footer = () => {
         </div>
 
         <div className={styles.footerInfo}>
-          <Mail size={24} color="var(--color-neutral)" className={styles.logo} />
+          <Mail size={24} className={styles.logo} />
           <div className={styles.content}>
             <h4>Email</h4>
             <a href={'mailto::test.email@gmail.com'}>test.email@gmail.com</a>

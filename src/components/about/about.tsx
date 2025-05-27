@@ -1,8 +1,10 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import styles from './about.module.scss';
 import { LocateFixed, ShieldHalf, Users } from 'lucide-react';
+import { motion } from 'framer-motion';
+import { useInView } from 'framer-motion';
 
 const sections = [
   {
@@ -26,26 +28,34 @@ const sections = [
 
 const About = () => {
   const [openIndex, setOpenIndex] = useState(0);
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, margin: '-50px' });
 
   return (
-    <section className={styles.aboutContainer}>
+    <section className={styles.aboutContainer} ref={ref}>
       <h2 className={styles.title}>Dobrodošli na stranicu GromZone paintball</h2>
       <div className={styles.aboutSubContainer}>
         <div className={styles.leftSide}>
-          <div className={styles.leftSideBox}>
+          <motion.div className={styles.leftSideBox}
+            initial={{ opacity: 0, y: 50 }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.5, ease: 'easeIn' }}>
             <div className={styles.logoContainer}>
               {sections[openIndex].icon}
             </div>
-          </div>
+          </motion.div>
         </div>
 
         <div className={styles.rightSide}>
           <div className={styles.aboutSelection}>
             <ul className={styles.accordionList}>
               {sections.map((section, idx) => (
-                <li
+                <motion.li
                   key={section.title}
                   className={`${styles.accordionItem} ${openIndex === idx ? styles.expanded : ''}`}
+                  initial={{ opacity: 0, y: 50 }}
+                  animate={isInView ? { opacity: 1, y: 0 } : {}}
+                  transition={{ duration: 0.5, ease: 'easeIn', delay: idx * 0.2 }}
                 >
                   <button
                     className={styles.accordionTitle}
@@ -59,7 +69,7 @@ const About = () => {
                       <p>{section.content}</p>
                     </div>
                   )}
-                </li>
+                </motion.li>
               ))}
             </ul>
           </div>
