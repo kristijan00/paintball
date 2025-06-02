@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 interface LinkButtonProps {
   text: string;
@@ -9,12 +10,13 @@ interface LinkButtonProps {
 
 const LinkButton: React.FC<LinkButtonProps> = props => {
   return (
-    <a className={props.className}
+    <Link className={props.className}
       onClick={props.onClick}
       href={props.href}
+      scroll={true}
     >
       {props.text}
-    </a>
+    </Link>
   );
 };
 

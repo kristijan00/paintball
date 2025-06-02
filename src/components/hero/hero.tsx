@@ -3,16 +3,29 @@
 import styles from './hero.module.scss';
 import LinkButton from '../link-button/link-button';
 
-const Hero = () => {
+interface HeroProps {
+  title: string;
+  description: string;
+  backgroundImage: string;
+  buttonText?: string;
+}
+
+const Hero = (props: HeroProps) => {
   return (
-    <section className={styles.container}>
+    <section className={styles.container} style={props.backgroundImage ? { background: `url(${props.backgroundImage}) center center` } : undefined}>
       <div className={styles.fadeBg}></div>
-      <h1 className={styles.title}>GromZone</h1>
-      <p className={styles.description}>Paintball is a team sport in which players eliminate opponents by hitting them with dye-filled, breakable capsules (paintballs) that are shot from a paintball marker. Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta aperiam vero ratione culpa obcaecati magnam dolor fugit distinctio at, quod libero vel eaque consectetur repellat totam minima ipsum doloribus sequi!</p>
-      <LinkButton
-        className={styles.button}
-        href="#contact"
-        text="Rezerviraj" />
+      <h1 className={styles.title}>{props.title}</h1>
+      {
+        props.description &&
+        <p className={styles.description}>{props.description}</p>
+      }
+      {
+        props.buttonText &&
+        <LinkButton
+          className={styles.button}
+          href="#contact"
+          text={props.buttonText || ''} />
+      }
     </section>
   );
 };

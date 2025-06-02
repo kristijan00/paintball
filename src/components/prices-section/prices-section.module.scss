@@ -1,0 +1,134 @@
+@use '../../app/themes/mixins.scss'as *;
+
+.pricesContainer {
+  position        : relative;
+  min-height      : 100vh;
+  padding-top     : 12vh;
+  background-color: var(--color-section);
+
+  .title {
+    @include section-title(var(--color-primary));
+  }
+
+  .description {
+    font-family: var(--font-body);
+    font-size  : 1rem;
+    padding    : 0 1rem;
+    width      : 70%;
+    margin     : 2rem auto;
+    text-align : center;
+  }
+
+  .pricesList {
+    display        : flex;
+    gap            : 2.5rem;
+    justify-content: center;
+    flex-wrap      : wrap;
+
+    .priceItem {
+      display         : flex;
+      flex-direction  : column;
+      align-items     : center;
+      justify-content : space-evenly;
+      background-color: var(--color-section-light); // slightly lighter than main bg
+      border-radius   : 1rem;
+      padding         : 2rem;
+      width           : 20%;
+      height          : 50vh;
+      box-shadow      : 0 4px 12px rgba(0, 0, 0, 0.1);
+      text-align      : center;
+      cursor          : pointer;
+      border          : 3px solid transparent; // Default border
+
+      // Special styling for the second card
+      &:nth-child(2) {
+        background-color: var(--color-section-dark);
+      }
+
+      .priceTitle {
+        font-family  : var(--font-heading);
+        font-size    : 1.5rem;
+        color        : white;
+        margin-bottom: 1rem;
+      }
+
+      .icon {
+        margin-right: 0.5rem;
+      }
+
+      .priceDescription {
+        font-family  : var(--font-body);
+        font-size    : 1rem;
+        color        : var(--color-neutral);
+        margin-bottom: 1rem;
+      }
+
+      .priceAmount {
+        font-family: var(--font-body);
+        font-size  : 1.5rem;
+        font-weight: 700;
+        color      : var(--color-cta);
+        margin-top : 1rem;
+      }
+
+      .ctaButton {
+        @include button-base();
+        height    : 3rem;
+        margin-top: 1rem;
+      }
+
+      @include overlay(rgba(0, 0, 0, 0.1));
+    }
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items   : center;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .pricesContainer {
+    padding-top: 6vh;
+
+    .description {
+      font-family: var(--font-body);
+      font-size  : 1rem;
+      padding    : 0 0.5rem;
+      width      : 90%;
+      margin     : 1rem auto;
+      text-align : center;
+    }
+
+    .pricesList {
+      margin: 2rem 0;
+
+      .priceItem {
+        width        : 80%; // Full width on mobile
+        margin-bottom: 1rem; // Spacing between items
+        transition   : transform 0.3s ease;
+
+        &:hover {
+          transform : none; // Disable hover effect on mobile
+          box-shadow: none; // Disable shadow on hover
+          border    : 3px solid transparent; // Reset border on hover
+        }
+
+        .ctaButton {
+          @include button-mobile(90%);
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1130px) {
+  .pricesContainer {
+    .pricesList {
+      .priceItem {
+        width: 30%; // Adjust width for tablet
+      }
+    }
+  }
+
+}

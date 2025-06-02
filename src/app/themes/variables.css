@@ -5,6 +5,13 @@
   --color-section: #F5F5F0
     /* Tan */
   ;
+
+  --color-section-light: #5c6d58;
+  /* Light Olive Green */
+  
+  --color-section-dark : #364534;
+  /* Dark Olive Green */
+
   --color-header-footer: #2C2F33
     /* Dark Gray */
   ;
@@ -23,10 +30,10 @@
   --color-accent-highlight: #E1C340
     /* Light Yellow */
   ;
-  --color-heading: #BDAF61;
+  --color-heading      : #BDAF61;
   /* Warm tactical gold */
   /* Sophisticated and clean */
-  --color-footer: #3E4E3C;
+  --color-footer       : #3E4E3C;
   /* Earthy green */
   --color-footer-darker: #2F3B2D;
   /* Darker earthy green */

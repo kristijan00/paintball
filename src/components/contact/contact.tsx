@@ -204,7 +204,7 @@ const Contact = () => {
         <Popup
           title={popupTitle}
           message={popupMessage}
-          buttonName="Stäng"
+          buttonName="Zatvori"
           onClose={handleClosePopup}
         />
       )}

@@ -1,14 +1,3 @@
-@use './themes/mixins.scss'as *;
-@use './themes/animations.css'as *;
+@use './themes/mixins.scss' as *;
 
-.main {
-  min-height: 100vh;
-  z-index   : 1;
-  width     : 100%;
-}
-
-@media (max-width: 600px) {
-  .main {
-    padding: 0;
-  }
-}
+@include main-page;

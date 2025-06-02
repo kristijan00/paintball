@@ -32,10 +32,18 @@ const Footer = () => {
         </div>
 
         <div className={styles.socials}>
-          <SiInstagram color="#E4405F" className={styles.icon} />
-          <SiFacebook color="#1877F2" className={styles.icon} />
-          <SiTiktok color="#000000" className={styles.icon} />
-          <SiGoogle color="#4285F4" className={styles.icon} />
+          <a href="https://www.instagram.com/gromzone.paintball/" target="_blank" rel="noopener noreferrer" className={styles.icon}>
+            <SiInstagram color="#E4405F" />
+          </a>
+          <a href="" target="_blank" rel="noopener noreferrer" className={styles.icon}>
+            <SiFacebook color="#1877F2" />
+          </a>
+          <a href="" target="_blank" rel="noopener noreferrer" className={styles.icon}>
+            <SiTiktok color="#000000" />
+          </a>
+          <a href="https://google.com/search?q=GromZone" target="_blank" rel="noopener noreferrer" className={styles.icon}>
+            <SiGoogle color="#4285F4" />
+          </a>
         </div>
       </div>
       <div className={styles.footerLower}>
