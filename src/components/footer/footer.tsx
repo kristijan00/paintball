@@ -19,7 +19,9 @@ const Footer = () => {
           <Phone size={24} className={styles.logo} />
           <div className={styles.content}>
             <h4>Telefon</h4>
-            <a href={'tel:0991231234'}>099-123-1234</a>
+            <a href={'tel:0919492832'}>Jakov - 091-949-2832</a>
+            <br />
+            <a href={'tel:0953583661'}>Ana - 095-358-3661</a>
           </div>
         </div>
 
@@ -27,7 +29,7 @@ const Footer = () => {
           <Mail size={24} className={styles.logo} />
           <div className={styles.content}>
             <h4>Email</h4>
-            <a href={'mailto::test.email@gmail.com'}>test.email@gmail.com</a>
+            <a href={'mailto::gromzone.paintball@gmail.com'}>gromzone.paintball@gmail.com</a>
           </div>
         </div>
 
