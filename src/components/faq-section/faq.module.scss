@@ -5,7 +5,6 @@
   min-height           : 100vh;
   padding-top          : 12vh;
   background           : url('../../../public/camo.png') center center;
-  background-attachment: fixed;
   background-size      : cover;
 
   .title {
@@ -30,7 +29,7 @@
 
       .question {
         font-family  : var(--font-heading);
-        font-size    : 1.5rem;
+        font-size    : 1.3rem;
         color        : var(--color-text-overlays);
         margin-bottom: 1rem;
         opacity      : 0.7;
