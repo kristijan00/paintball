@@ -29,7 +29,7 @@ const Footer = () => {
           <Mail size={24} className={styles.logo} />
           <div className={styles.content}>
             <h4>Email</h4>
-            <a href={'mailto::gromzone.paintball@gmail.com'}>gromzone.paintball@gmail.com</a>
+            <a href={'mailto:gromzone.paintball@gmail.com'}>gromzone.paintball@gmail.com</a>
           </div>
         </div>
 
