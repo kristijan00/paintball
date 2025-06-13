@@ -1,13 +1,13 @@
 @use '../../app/themes/mixins.scss'as *;
 
 .pricesContainer {
-  position        : relative;
-  min-height      : 100vh;
-  padding-top     : 12vh;
-  background-color: var(--color-section);
+  position   : relative;
+  min-height : 100vh;
+  padding-top: 12vh;
+  background : url('../../../public/camo.png') center center;
 
   .title {
-    @include section-title(var(--color-primary));
+    @include section-title(white);
   }
 
   .description {
@@ -17,6 +17,7 @@
     width      : 70%;
     margin     : 2rem auto;
     text-align : center;
+    color      : white;
   }
 
   .pricesList {
@@ -39,6 +40,7 @@
       text-align      : center;
       cursor          : pointer;
       border          : 3px solid transparent; // Default border
+      transition      : border 0.2s ease;
 
       // Special styling for the second card
       &:nth-child(2) {
@@ -77,6 +79,10 @@
         margin-top: 1rem;
       }
 
+      &:hover {
+        border: 3px solid var(--color-cta); // Highlight border on hover
+      }
+
       @include overlay(rgba(0, 0, 0, 0.1));
     }
 
@@ -101,10 +107,10 @@
     }
 
     .pricesList {
-      margin: 2rem 0;
+      padding: 2rem 0;
 
       .priceItem {
-        width        : 80%; // Full width on mobile
+        width        : 80%;
         margin-bottom: 1rem; // Spacing between items
         transition   : transform 0.3s ease;
 
@@ -127,6 +133,10 @@
     .pricesList {
       .priceItem {
         width: 30%; // Adjust width for tablet
+
+        &:hover {
+          border: 3px solid transparent;
+        }
       }
     }
   }

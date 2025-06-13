@@ -22,12 +22,10 @@ const PricesSection = () => {
           whileHover={{
             y: -6,
             boxShadow: '0 8px 16px rgba(0,0,0,0.15)',
-            border: '3px solid var(--color-cta)',
             transition: { duration: 0.2 },
           }}
           whileTap={{
             scale: 0.98,
-            border: '3px solid var(--color-cta)',
             transition: { duration: 0.1 },
           }}>
           <h3 className={styles.priceTitle}><Package className={styles.icon} />Standardni paket</h3>
@@ -42,12 +40,10 @@ const PricesSection = () => {
           whileHover={{
             y: -6,
             boxShadow: '0 8px 16px rgba(0,0,0,0.15)',
-            border: '3px solid var(--color-cta)',
             transition: { duration: 0.2 },
           }}
           whileTap={{
             scale: 0.98,
-            border: '3px solid var(--color-cta)',
             transition: { duration: 0.1 },
           }}>
           <h3 className={styles.priceTitle}><Package className={styles.icon} />Premium paket</h3>
@@ -62,12 +58,10 @@ const PricesSection = () => {
           whileHover={{
             y: -6,
             boxShadow: '0 8px 16px rgba(0,0,0,0.15)',
-            border: '3px solid var(--color-cta)',
             transition: { duration: 0.2 },
           }}
           whileTap={{
             scale: 0.98,
-            border: '3px solid var(--color-cta)',
             transition: { duration: 0.1 },
           }}>
           <h3 className={styles.priceTitle}><Package className={styles.icon} />VIP paket</h3>

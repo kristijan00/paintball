@@ -13,6 +13,7 @@
   background-size: cover;
   color          : white;
   gap            : 1rem;
+  background-size: cover;
 
   .fadeBg {
     @include fade-bg();
@@ -38,8 +39,8 @@
   }
 
   .button {
-    cursor: pointer;
-    width: 25%;
+    cursor   : pointer;
+    width    : 25%;
     animation: bouncy 5s linear 0.5s;
     @include button-base();
   }
