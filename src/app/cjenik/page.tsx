@@ -1,3 +1,33 @@
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Cjenik | GromZone Paintball',
+  description: 'Pogledajte naš cjenik paintball paketa i usluga. Pronađite najbolju opciju za svoj tim i rezervirajte svoju igru već danas!',
+  openGraph: {
+    title: 'Cjenik | GromZone Paintball',
+    description: 'Pogledajte naš cjenik paintball paketa i usluga.',
+    images: ['/hero-1.jpg'],
+    siteName: 'GromZone Paintball',
+    type: 'website',
+  },
+  keywords: [
+    'paintball',
+    'cjenik',
+    'GromZone',
+    'paketi',
+    'rezervacija',
+    'team building',
+    'Slavonski Brod',
+    'cijene',
+    'usluge',
+  ],
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+  },
+};
+
 import styles from './page.module.scss';
 import Hero from '@/components/hero/hero';
 import PricesSection from '@/components/prices-section/prices-section';

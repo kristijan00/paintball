@@ -1,3 +1,22 @@
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'GromZone Paintball | Početna',
+  description: 'Paintball is a team sport in which players eliminate opponents by hitting them with dye-filled, breakable capsules (paintballs) that are shot from a paintball marker. Pridružite nam se za nezaboravnu avanturu u GromZone!',
+  openGraph: {
+    title: 'GromZone Paintball | Početna',
+    description: 'Paintball is a team sport in which players eliminate opponents by hitting them with dye-filled, breakable capsules (paintballs) that are shot from a paintball marker. Pridružite nam se za nezaboravnu avanturu u GromZone!',
+    images: ['/hero4.jpg'],
+    siteName: 'GromZone Paintball',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+  },
+  keywords: ['paintball', 'Slavonski Brod', 'GromZone', 'avantura', 'sport', 'team building', 'igra', 'početna'],
+};
+
 import styles from './page.module.scss';
 import Hero from '@/components/hero/hero';
 import About from '@/components/about/about';

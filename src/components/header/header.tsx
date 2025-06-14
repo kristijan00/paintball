@@ -43,7 +43,7 @@ const Header = () => {
           <ul className={styles.navList}>
             <li className={styles.navItem} onClick={handleNavItemClick}><Link className={`${styles.link} ${pathname === '/' ? styles.active : ''}`} href="/">Početna</Link></li>
             <li className={styles.navItem} onClick={handleNavItemClick}><Link className={`${styles.link} ${pathname === '/cjenik' ? styles.active : ''}`} href="/cjenik">Cjenik</Link></li>
-            <li className={styles.navItem} onClick={handleNavItemClick}><Link className={`${styles.link} ${pathname === '/najcesca-pitanja' ? styles.active : ''}`} href="/faq">Faq</Link></li>
+            <li className={styles.navItem} onClick={handleNavItemClick}><Link className={`${styles.link} ${pathname === '/faq' ? styles.active : ''}`} href="/faq">Faq</Link></li>
           </ul>
         </nav>
       </div>
