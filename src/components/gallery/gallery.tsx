@@ -6,10 +6,10 @@ import Image from 'next/image';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
 
 const images = [
-  '/hero-1.jpg',
-  '/hero-2.jpg',
-  '/hero-3.jpg',
-  '/hero-5.jpg',
+  '/hero-1.webp',
+  '/hero-2.webp',
+  '/hero-3.webp',
+  '/hero-5.webp',
 ];
 
 const Gallery = () => {

@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Često postavljana pitanja | GromZone Paintball',
     description: 'Ovdje možete pronaći odgovore na najčešće postavljana pitanja vezana uz naše paintball usluge.',
-    images: ['/hero-2.jpg'],
+    images: ['/hero-2.webp'],
     siteName: 'GromZone Paintball',
   },
   keywords: [
@@ -61,7 +61,7 @@ const FAQ = () => {
       <main className={styles.faqContainer}>
         <Hero
           title={'Često postavljana pitanja'}
-          backgroundImage={'/hero-2.jpg'}
+          backgroundImage={'/hero-2.webp'}
           description={'Ovdje možete pronaći odgovore na najčešće postavljana pitanja vezana uz naše paintball usluge. Ako imate dodatnih pitanja, slobodno nas kontaktirajte!'}
           buttonText={''} />
         <Faq />

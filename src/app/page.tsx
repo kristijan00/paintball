@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'GromZone Paintball | Početna',
     description: 'Paintball is a team sport in which players eliminate opponents by hitting them with dye-filled, breakable capsules (paintballs) that are shot from a paintball marker. Pridružite nam se za nezaboravnu avanturu u GromZone!',
-    images: ['/hero4.jpg'],
+    images: ['/hero4.webp'],
     siteName: 'GromZone Paintball',
   },
   robots: {
@@ -29,7 +29,7 @@ const Home = () => {
   return (
     <main className={styles.main}>
       <Hero title={'GromZone'} description={'Paintball is a team sport in which players eliminate opponents by hitting them with dye-filled, breakable capsules (paintballs) that are shot from a paintball marker. Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta aperiam vero ratione culpa obcaecati magnam dolor fugit distinctio at, quod libero vel eaque consectetur repellat totam minima ipsum doloribus sequi!'}
-        backgroundImage={'/hero4.jpg'} buttonText={'Rezerviraj'} />
+        backgroundImage={'/hero4.webp'} buttonText={'Rezerviraj'} />
       <About />
       <CTA />
       <Gallery />

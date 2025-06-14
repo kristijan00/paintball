@@ -2,7 +2,7 @@
 
 import styles from './header.module.scss';
 import Image from 'next/image';
-import Logo from '../../../public/icon-Photoroom.png';
+import Logo from '../../../public/icon-Photoroom.webp';
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
