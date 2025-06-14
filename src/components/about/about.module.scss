@@ -27,7 +27,7 @@
         position     : relative;
         background   :
           linear-gradient(to bottom, rgba(255, 255, 255, 0) 5%, #fff 100%), // fade to white (or your bg color)
-          url('../../../public/camo.png') center top/cover no-repeat; // adjust path if needed
+          url('../../../public/camo.webp') center top/cover no-repeat; // adjust path if needed
         box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
 
         .logoContainer {

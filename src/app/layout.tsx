@@ -27,9 +27,9 @@ export const metadata: Metadata = {
   title: 'GromZone',
   description: 'Paintball in the Grom Zone',
   icons: {
-    icon: '/icon-Photoroom.png',
-    shortcut: '/icon-Photoroom.png',
-    apple: '/icon-Photoroom.png',
+    icon: '/icon-Photoroom.webp',
+    shortcut: '/icon-Photoroom.webp',
+    apple: '/icon-Photoroom.webp',
   },
 };
 
