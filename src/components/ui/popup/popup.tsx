@@ -1,7 +1,7 @@
 'use client';
 import styles from './popup.module.scss';
 import { useEffect } from 'react';
-import Button from '@/components/form-button/form-button';
+import Button from '@/components/ui/form-button/form-button';
 
 interface PopupProps {
   title: string;

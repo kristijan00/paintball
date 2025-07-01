@@ -1,7 +1,7 @@
 'use client';
 import styles from './prices-section.module.scss';
 import { Package } from 'lucide-react';
-import LinkButton from '@/components/link-button/link-button';
+import LinkButton from '@/components/ui/link-button/link-button';
 import { useRef } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';

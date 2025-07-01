@@ -29,11 +29,11 @@ export const metadata: Metadata = {
 };
 
 import styles from './page.module.scss';
-import Hero from '@/components/hero/hero';
-import Faq from '@/components/faq-section/faq';
-import Contact from '@/components/contact/contact';
+import Hero from '@/components/sections/hero/hero';
+import Faq from '@/components/sections/faq/faq';
+import Contact from '@/components/sections/contact/contact';
 import Head from 'next/head';
-import { questions } from '@/components/faq-section/faq-data';
+import { questions } from '../../../data/faq-data';
 
 const FAQ = () => {
 

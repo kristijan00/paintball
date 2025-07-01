@@ -1,13 +1,13 @@
 'use client';
 import styles from './contact.module.scss';
-import FormButton from '../form-button/form-button';
+import FormButton from '../../ui/form-button/form-button';
 import TextField from '@mui/material/TextField';
 import { User, Mail, MessageCircle } from 'lucide-react';
 import Box from '@mui/material/Box';
 import React, { useRef, useState, useEffect } from 'react';
 import emailjs from '@emailjs/browser';
-import Loader from '@/components/loader/loader';
-import Popup from '@/components/popup/popup';
+import Loader from '@/components/ui/loader/loader';
+import Popup from '@/components/ui/popup/popup';
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 

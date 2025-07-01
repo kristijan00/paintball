@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import styles from './faq.module.scss';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowDown } from 'lucide-react';
-import { questions } from './faq-data';
+import { questions } from '../../../../data/faq-data';
 
 
 const FAQ = () => {

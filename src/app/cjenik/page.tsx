@@ -29,9 +29,9 @@ export const metadata: Metadata = {
 };
 
 import styles from './page.module.scss';
-import Hero from '@/components/hero/hero';
-import PricesSection from '@/components/prices-section/prices-section';
-import Contact from '@/components/contact/contact';
+import Hero from '@/components/sections/hero/hero';
+import PricesSection from '@/components/sections/prices/prices-section';
+import Contact from '@/components/sections/contact/contact';
 
 const Prices = () => {
 

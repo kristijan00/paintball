@@ -18,12 +18,12 @@ export const metadata: Metadata = {
 };
 
 import styles from './page.module.scss';
-import Hero from '@/components/hero/hero';
-import About from '@/components/about/about';
-import CTA from '@/components/cta/cta';
-import Gallery from '@/components/gallery/gallery';
-import Contact from '@/components/contact/contact';
-import Location from '@/components/location/location';
+import Hero from '@/components/sections/hero/hero';
+import About from '@/components/sections/about/about';
+import CTA from '@/components/sections/cta/cta';
+import Gallery from '@/components/sections/gallery/gallery';
+import Contact from '@/components/sections/contact/contact';
+import Location from '@/components/sections/location/location';
 
 const Home = () => {
   return (

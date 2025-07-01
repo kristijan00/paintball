@@ -1,10 +1,10 @@
-@use '../../app/themes/mixins.scss'as *;
+@use '../../../app/themes/mixins.scss'as *;
 
 .ctaContainer {
   position  : relative;
   padding   : 3rem 2rem;
   text-align: center;
-  background: url('../../../public/camo.webp') center center;
+  background: url('../../../../public/camo.webp') center center;
   color     : white;
 
   .button {

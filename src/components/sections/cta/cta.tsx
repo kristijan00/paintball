@@ -1,7 +1,7 @@
 'use client';
 
 import styles from './cta.module.scss';
-import LinkButton from '../link-button/link-button';
+import LinkButton from '../../ui/link-button/link-button';
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';

@@ -1,7 +1,7 @@
 'use client';
 
 import styles from './hero.module.scss';
-import LinkButton from '../link-button/link-button';
+import LinkButton from '../../ui/link-button/link-button';
 
 interface HeroProps {
   title: string;

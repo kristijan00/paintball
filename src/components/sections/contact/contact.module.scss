@@ -1,11 +1,11 @@
-@use '../../app/themes/mixins.scss'as *;
-@use '../../app/themes/animations.css'as *;
+@use '../../../app/themes/mixins.scss'as *;
+@use '../../../app/themes/animations.css'as *;
 
 .contactContainer {
   position       : relative;
   height         : 100vh;
   padding-top    : 10vh;
-  background     : url('../../../public/hero-8.webp') center center;
+  background     : url('../../../../public/hero-8.webp') center center;
   background-size: cover;
 
   .title {
