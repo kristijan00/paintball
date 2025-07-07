@@ -5,7 +5,7 @@ export const questions = [
   },
   {
     question: 'Koliko traje jedna igra?',
-    answer: 'Jedna igra obično traje između 10 i 20 minuta, ovisno o scenariju igre i broju igrača.',
+    answer: 'Jedna igra obično traje između 30 i 45 minuta, ovisno o scenariju igre i broju igrača.',
   },
   {
     question: 'Je li paintball siguran?',

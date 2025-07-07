@@ -28,8 +28,11 @@ import Location from '@/components/sections/location/location';
 const Home = () => {
   return (
     <main className={styles.main}>
-      <Hero title={'GromZone'} description={'Paintball is a team sport in which players eliminate opponents by hitting them with dye-filled, breakable capsules (paintballs) that are shot from a paintball marker. Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta aperiam vero ratione culpa obcaecati magnam dolor fugit distinctio at, quod libero vel eaque consectetur repellat totam minima ipsum doloribus sequi!'}
-        backgroundImage={'/hero4.webp'} buttonText={'Rezerviraj'} />
+      <Hero title={'GromZone'} description={`Uronite u svijet akcije, timskog duha i adrenalinskih izazova!
+GromZone nudi jedinstveno paintball iskustvo u prirodnom okruženju, idealno za prijatelje, obitelj ili timske izlete.
+      Naša moderna oprema i pažljivo osmišljene borbene zone garantiraju nezaboravne trenutke.
+Rezervirajte svoj termin već danas!`}
+      backgroundImage={'/hero4.webp'} buttonText={'Rezerviraj'} />
       <About />
       <CTA />
       <Gallery />

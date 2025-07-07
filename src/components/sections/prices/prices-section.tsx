@@ -28,9 +28,9 @@ const PricesSection = () => {
             scale: 0.98,
             transition: { duration: 0.1 },
           }}>
-          <h3 className={styles.priceTitle}><Package className={styles.icon} />Standardni paket</h3>
-          <p className={styles.priceDescription}>Uključuje osnovnu opremu i 100 kuglica</p>
-          <span className={styles.priceAmount}>100 EUR</span>
+          <h3 className={styles.priceTitle}><Package className={styles.icon} />S paket</h3>
+          <p className={styles.priceDescription}>Uključuje full opremu i 200 kuglica</p>
+          <span className={styles.priceAmount}>20 EUR</span>
           <LinkButton text={'Rezerviraj'} href="#contact" className={styles.ctaButton} />
         </motion.div>
         <motion.div className={styles.priceItem}
@@ -46,9 +46,9 @@ const PricesSection = () => {
             scale: 0.98,
             transition: { duration: 0.1 },
           }}>
-          <h3 className={styles.priceTitle}><Package className={styles.icon} />Premium paket</h3>
-          <p className={styles.priceDescription}>Uključuje naprednu opremu i 200 kuglica</p>
-          <span className={styles.priceAmount}>350 EUR</span>
+          <h3 className={styles.priceTitle}><Package className={styles.icon} />M paket</h3>
+          <p className={styles.priceDescription}>Uključuje full opremu i 300 kuglica</p>
+          <span className={styles.priceAmount}>25 EUR</span>
           <LinkButton text={'Rezerviraj'} href="#contact" className={styles.ctaButton} />
         </motion.div>
         <motion.div className={styles.priceItem}
@@ -64,11 +64,15 @@ const PricesSection = () => {
             scale: 0.98,
             transition: { duration: 0.1 },
           }}>
-          <h3 className={styles.priceTitle}><Package className={styles.icon} />VIP paket</h3>
-          <p className={styles.priceDescription}>Uključuje sve iz Premium paketa plus dodatne kuglice i privatnog vodiča</p>
-          <span className={styles.priceAmount}>500 EUR</span>
+          <h3 className={styles.priceTitle}><Package className={styles.icon} />L paket</h3>
+          <p className={styles.priceDescription}>Uključuje full opremu i 400 kuglica</p>
+          <span className={styles.priceAmount}>30 EUR</span>
           <LinkButton text={'Rezerviraj'} href="#contact" className={styles.ctaButton} />
         </motion.div>
+      </div>
+      <div className={styles.pricingNotes}>
+        <p className={styles.note}>* Cijene su po osobi</p>
+        <p className={styles.note}>* Dopuna od 100 kuglica: +5 EUR</p>
       </div>
     </section>
   );
