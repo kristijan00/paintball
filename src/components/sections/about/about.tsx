@@ -21,7 +21,7 @@ const sections = [
   },
   {
     title: 'VELIČINA TEAM-A',
-    content: 'Naš teren može primiti do 20 igrača po timu, što omogućava dinamične i uzbudljive igre. Bez obzira na to da li ste početnik ili iskusan igrač, imamo nešto za svakoga.',
+    content: 'Naš teren može primiti do 20 igrača, podijeljenih u 2 ekipe po 10 igrača. To omogućava dinamične i uzbudljive igre. Bez obzira na to da li ste početnik ili iskusan igrač, imamo nešto za svakoga.',
     icon: <ShieldHalf size={100} color="var(--color-neutral)" className={styles.logo} />,
   },
 ];

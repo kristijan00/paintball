@@ -5,11 +5,19 @@ export const questions = [
   },
   {
     question: 'Koliko traje jedna igra?',
-    answer: 'Jedna igra obično traje između 30 i 45 minuta, ovisno o scenariju igre i broju igrača.',
+    answer: 'Jedna igra obično traje najviše do 2h, ovisno o scenariju igre i broju igrača.',
   },
   {
     question: 'Je li paintball siguran?',
     answer: 'Da, paintball je siguran sport kada se poštuju pravila i koristi odgovarajuća zaštitna oprema. Svi igrači moraju nositi zaštitne maske i druge zaštitne elemente.',
+  },
+  {
+    question: 'Koliko igrača može sudjelovati u jednoj igri?',
+    answer: 'Na našem terenu može sudjelovati do 20 igrača, podijeljenih u dva tima po 10 igrača.',
+  },
+  {
+    question: 'Da li postoji dobna granica?',
+    answer: 'Da, paintball je namijenjen osobama starijim od 15 godina. Igrači mlađi od 18 godina moraju imati pisanu suglasnost roditelja ili skrbnika.',
   },
   {
     question: 'Kako se pripremiti za paintball?',
@@ -21,6 +29,6 @@ export const questions = [
   },
   {
     question: 'Kako mogu rezervirati igru?',
-    answer: 'Rezervacije možete napraviti putem naše web stranice ili nas kontaktirati izravno putem telefona ili e-maila.',
+    answer: 'Rezervacije trenutno možete napraviti tako da nas kontaktirate izravno putem telefona ili e-maila.',
   },
 ];
