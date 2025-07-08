@@ -2,10 +2,16 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'GromZone Paintball | Početna',
-  description: 'Paintball is a team sport in which players eliminate opponents by hitting them with dye-filled, breakable capsules (paintballs) that are shot from a paintball marker. Pridružite nam se za nezaboravnu avanturu u GromZone!',
+  description: `Uronite u svijet akcije, timskog duha i adrenalinskih izazova!
+GromZone nudi jedinstveno paintball iskustvo u prirodnom okruženju, idealno za prijatelje, obitelj ili timske izlete.
+      Naša moderna oprema i pažljivo osmišljene borbene zone garantiraju nezaboravne trenutke.
+Rezervirajte svoj termin već danas!`,
   openGraph: {
     title: 'GromZone Paintball | Početna',
-    description: 'Paintball is a team sport in which players eliminate opponents by hitting them with dye-filled, breakable capsules (paintballs) that are shot from a paintball marker. Pridružite nam se za nezaboravnu avanturu u GromZone!',
+    description: `Uronite u svijet akcije, timskog duha i adrenalinskih izazova!
+GromZone nudi jedinstveno paintball iskustvo u prirodnom okruženju, idealno za prijatelje, obitelj ili timske izlete.
+      Naša moderna oprema i pažljivo osmišljene borbene zone garantiraju nezaboravne trenutke.
+Rezervirajte svoj termin već danas!`,
     images: ['/hero4.webp'],
     siteName: 'GromZone Paintball',
   },

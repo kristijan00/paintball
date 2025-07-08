@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import { Bebas_Neue, Oswald, Roboto } from 'next/font/google';
 import './globals.css';
 import Header from '@/components/layout/header/header';
@@ -23,6 +23,14 @@ const roboto = Roboto({
   display: 'swap',
 });
 
+// Export viewport separately
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
+};
+
 export const metadata: Metadata = {
   title: 'GromZone',
   description: 'Paintball in the Grom Zone',
@@ -30,12 +38,6 @@ export const metadata: Metadata = {
     icon: '/icon-Photoroom.webp',
     shortcut: '/icon-Photoroom.webp',
     apple: '/icon-Photoroom.webp',
-  },
-  viewport: {
-    width: 'device-width',
-    initialScale: 1,
-    maximumScale: 1,
-    userScalable: false,
   },
 };
 
