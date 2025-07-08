@@ -31,6 +31,12 @@ export const metadata: Metadata = {
     shortcut: '/icon-Photoroom.webp',
     apple: '/icon-Photoroom.webp',
   },
+  viewport: {
+    width: 'device-width',
+    initialScale: 1,
+    maximumScale: 1,
+    userScalable: false,
+  },
 };
 
 const RootLayout = ({
