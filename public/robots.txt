@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://paintball-seven.vercel.app/
+
+# Sitemaps
+Sitemap: https://paintball-seven.vercel.app/sitemap.xml
