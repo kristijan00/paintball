@@ -9,6 +9,7 @@ export const metadata: Metadata = {
     images: ['/hero-1.webp'],
     siteName: 'GromZone Paintball',
     type: 'website',
+    locale: 'hr_HR',
   },
   keywords: [
     'paintball',

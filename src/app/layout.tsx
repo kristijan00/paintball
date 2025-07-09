@@ -33,11 +33,27 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   title: 'GromZone',
-  description: 'Paintball in the Grom Zone',
+  description: 'Najbolji paintball teren u Slavonskom Brodu.',
   icons: {
     icon: '/icon-Photoroom.webp',
     shortcut: '/icon-Photoroom.webp',
     apple: '/icon-Photoroom.webp',
+  },
+  keywords: [
+    'paintball Slavonski Brod',
+    'paintball teren Slavonski Brod', 
+    'najbolji paintball Slavonski Brod',
+    'paintball centar Slavonski Brod',
+    'GromZone paintball',
+    'team building Slavonski Brod',
+    'paintball rezervacija',
+  ],
+  openGraph: {
+    title: 'GromZone Paintball',
+    description: 'Iskusi adrenalinsku avanturu na našem taktičkom poligonu.',
+    type: 'website',
+    locale: 'hr_HR',
+    siteName: 'GromZone',
   },
 };
 

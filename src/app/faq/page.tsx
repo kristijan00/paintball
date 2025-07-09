@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     description: 'Ovdje možete pronaći odgovore na najčešće postavljana pitanja vezana uz naše paintball usluge.',
     images: ['/hero-2.webp'],
     siteName: 'GromZone Paintball',
+    locale: 'hr_HR',
   },
   keywords: [
     'paintball',
@@ -16,6 +17,7 @@ export const metadata: Metadata = {
     'FAQ',
     'pravila',
     'sigurnost',
+    'dobna granica',
     'rezervacija',
     'oprema',
     'team building',

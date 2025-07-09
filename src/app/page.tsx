@@ -14,13 +14,14 @@ GromZone nudi jedinstveno paintball iskustvo u prirodnom okruženju, idealno za 
 Rezervirajte svoj termin već danas!`,
     images: ['/hero4.webp'],
     siteName: 'GromZone Paintball',
+    locale: 'hr_HR',
   },
   robots: {
     index: true,
     follow: true,
     nocache: false,
   },
-  keywords: ['paintball', 'Slavonski Brod', 'GromZone', 'avantura', 'sport', 'team building', 'igra', 'početna'],
+  keywords: ['paintball', 'teren', 'Slavonski Brod', 'GromZone', 'avantura', 'sport', 'team building', 'igra', 'početna'],
 };
 
 import styles from './page.module.scss';
