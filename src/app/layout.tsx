@@ -32,8 +32,8 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: 'GromZone',
-  description: 'Najbolji paintball teren u Slavonskom Brodu.',
+  title: 'GromZone Paintball | Slavonski Brod',
+  description: 'Najbolji paintball teren u Slavonskom Brodu. Rezervirajte svoju avanturu danas!',
   icons: {
     icon: '/icon-Photoroom.webp',
     shortcut: '/icon-Photoroom.webp',
@@ -54,6 +54,7 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'hr_HR',
     siteName: 'GromZone',
+    url: 'https://paintball-seven.vercel.app/',
   },
 };
 

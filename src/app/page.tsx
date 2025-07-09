@@ -2,26 +2,26 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'GromZone Paintball | Početna',
-  description: `Uronite u svijet akcije, timskog duha i adrenalinskih izazova!
-GromZone nudi jedinstveno paintball iskustvo u prirodnom okruženju, idealno za prijatelje, obitelj ili timske izlete.
-      Naša moderna oprema i pažljivo osmišljene borbene zone garantiraju nezaboravne trenutke.
-Rezervirajte svoj termin već danas!`,
+  description: `GromZone je novi paintball teren u Slavonskom Brodu – idealan za timsku zabavu, proslave i adrenalinsku avanturu u prirodi. Rezerviraj svoj termin već danas!`,
   openGraph: {
     title: 'GromZone Paintball | Početna',
-    description: `Uronite u svijet akcije, timskog duha i adrenalinskih izazova!
-GromZone nudi jedinstveno paintball iskustvo u prirodnom okruženju, idealno za prijatelje, obitelj ili timske izlete.
-      Naša moderna oprema i pažljivo osmišljene borbene zone garantiraju nezaboravne trenutke.
-Rezervirajte svoj termin već danas!`,
+    description: `GromZone je novi paintball teren u Slavonskom Brodu – idealan za timsku zabavu, proslave i adrenalinsku avanturu u prirodi. Rezerviraj svoj termin već danas!`,
     images: ['/hero4.webp'],
     siteName: 'GromZone Paintball',
     locale: 'hr_HR',
+    url: 'https://paintball-seven.vercel.app/',
   },
   robots: {
     index: true,
     follow: true,
     nocache: false,
   },
-  keywords: ['paintball', 'teren', 'Slavonski Brod', 'GromZone', 'avantura', 'sport', 'team building', 'igra', 'početna'],
+  keywords: ['paintball Slavonski Brod',
+    'paintball teren',
+    'GromZone paintball',
+    'paintball Hrvatska',
+    'team building Slavonski Brod',
+    'adrenalinske igre'],
 };
 
 import styles from './page.module.scss';
