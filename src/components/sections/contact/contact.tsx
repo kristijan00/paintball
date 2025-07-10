@@ -83,7 +83,7 @@ const Contact = () => {
         transition={{ duration: 0.5, ease: 'easeIn' }}>
         <Box className={styles.inputGroup} sx={{ display: 'flex', alignItems: 'flex-end' }}>
           <User size={22} className={styles.icon} />
-          <TextField id="input-with-sx" required label="Ima i prezime" name="fullName" fullWidth sx={{
+          <TextField id="input-with-sx" required label="Ime i prezime" name="fullName" fullWidth sx={{
             '& .MuiInputBase-input': { color: 'white' },
             '& .MuiInputLabel-root': { color: 'white' },
             '& .MuiInput-underline:before': { borderBottomColor: 'white' },
