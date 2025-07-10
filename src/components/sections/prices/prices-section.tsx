@@ -29,7 +29,7 @@ const PricesSection = () => {
             transition: { duration: 0.1 },
           }}>
           <h3 className={styles.priceTitle}><Package className={styles.icon} />S paket</h3>
-          <p className={styles.priceDescription}>Uključuje full opremu i 200 kuglica</p>
+          <p className={styles.priceDescription}>Uključuje full opremu i 200 kuglica + 2h igre</p>
           <span className={styles.priceAmount}>20 EUR</span>
           <LinkButton text={'Rezerviraj'} href="#contact" className={styles.ctaButton} />
         </motion.div>
@@ -47,7 +47,7 @@ const PricesSection = () => {
             transition: { duration: 0.1 },
           }}>
           <h3 className={styles.priceTitle}><Package className={styles.icon} />M paket</h3>
-          <p className={styles.priceDescription}>Uključuje full opremu i 300 kuglica</p>
+          <p className={styles.priceDescription}>Uključuje full opremu i 300 kuglica + 2h igre</p>
           <span className={styles.priceAmount}>25 EUR</span>
           <LinkButton text={'Rezerviraj'} href="#contact" className={styles.ctaButton} />
         </motion.div>
@@ -65,7 +65,7 @@ const PricesSection = () => {
             transition: { duration: 0.1 },
           }}>
           <h3 className={styles.priceTitle}><Package className={styles.icon} />L paket</h3>
-          <p className={styles.priceDescription}>Uključuje full opremu i 400 kuglica</p>
+          <p className={styles.priceDescription}>Uključuje full opremu i 400 kuglica + 2h igre</p>
           <span className={styles.priceAmount}>30 EUR</span>
           <LinkButton text={'Rezerviraj'} href="#contact" className={styles.ctaButton} />
         </motion.div>
