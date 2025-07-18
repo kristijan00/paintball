@@ -29,7 +29,9 @@ const Header = () => {
   return (
     <header className={`${styles.header} ${scrolled ? styles.scrolled : ''}`}>
       <div className={styles.logoContainer}>
-        <Image src={Logo} className={styles.logo} alt="Paintball logo" />
+        <Link href="/">
+          <Image src={Logo} className={styles.logo} alt="Paintball logo" />
+        </Link>
       </div>
       <div className={styles.headerRight}>
         <button

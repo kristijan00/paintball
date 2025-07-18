@@ -15,8 +15,18 @@ const sections = [
   },
   {
     title: 'LOKACIJA',
-    content: 'Naše paintball teren smješten je u prekrasnom prirodnom okruženju, savršenom za uzbudljivu igru.',
-    icon: <LocateFixed size={100} color="var(--color-neutral)" className={styles.logo} />,
+    content: (
+      <>
+        GromZone paintball se nalazi na adresi{' '}
+        <a
+          href="#location"
+          className={styles.mapLink}
+        >
+          Ul. dr. Franje Tuđmana 5, 35000, Gromačnik
+        </a>
+        . Naš paintball teren smješten je u prekrasnom prirodnom okruženju, savršenom za uzbudljivu igru.
+      </>
+    ), icon: <LocateFixed size={100} color="var(--color-neutral)" className={styles.logo} />,
 
   },
   {

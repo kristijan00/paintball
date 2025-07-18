@@ -103,6 +103,17 @@
             --fade-in-translate: 10px;
             padding            : 0.5rem 1.5rem;
             animation          : fadeIn 0.3s;
+
+            .mapLink {
+              color          : var(--color-cta);
+              text-decoration: underline;
+              opacity        : 0.8;
+              transition     : opacity 0.3s;
+
+              &:hover {
+                opacity: 1;
+              }
+            }
           }
         }
 
@@ -159,6 +170,16 @@
           .accordionTitle {
             &:active {
               opacity: 1;
+            }
+          }
+
+          .accordionContent {
+            .mapLink {
+              opacity        : 1;
+
+              &:hover {
+                opacity: 1;
+              }
             }
           }
         }
