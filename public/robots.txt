@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://paintball-seven.vercel.app/
+Host: https://gromzone.com
 
 # Sitemaps
-Sitemap: https://paintball-seven.vercel.app/sitemap.xml
+Sitemap: https://gromzone.com/sitemap.xml

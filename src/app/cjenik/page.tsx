@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Cjenik | GromZone Paintball',
     description: 'Pogledajte naš cjenik i odaberite idealan paintball paket za vas. GromZone - Paintball teren u Slavonskom Brodu.',
-    url: 'https://paintball-seven.vercel.app/cjenik',
+    url: 'https://gromzone.com/cjenik',
     images: ['/hero-1.webp'],
     siteName: 'GromZone Paintball',
     type: 'website',

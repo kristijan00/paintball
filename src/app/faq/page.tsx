@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     images: ['/hero-2.webp'],
     siteName: 'GromZone Paintball',
     locale: 'hr_HR',
-    url: 'https://paintball-seven.vercel.app/faq',
+    url: 'https://gromzone.com/faq',
   },
   keywords: [
     'paintball Slavonski Brod',

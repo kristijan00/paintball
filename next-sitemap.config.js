@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: 'https://paintball-seven.vercel.app/',
+  siteUrl: 'https://gromzone.com',
   generateRobotsTxt: true,
   robotsTxtOptions: {
     policies: [

@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     images: ['/hero4.webp'],
     siteName: 'GromZone Paintball',
     locale: 'hr_HR',
-    url: 'https://paintball-seven.vercel.app/',
+    url: 'https://gromzone.com/',
   },
   robots: {
     index: true,
