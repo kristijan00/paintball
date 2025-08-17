@@ -1,3 +1,0 @@
-# Redirect all traffic to gromzone.com
-https://paintball-seven.vercel.app/* https://gromzone.com/:splat 301!
-https://paintball-seven.vercel.app/* https://gromzone.com/:splat 301!

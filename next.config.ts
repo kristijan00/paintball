@@ -9,7 +9,7 @@ const nextConfig: NextConfig = {
         has: [
           {
             type: 'host',
-            value: 'https://paintball-seven.vercel.app/',
+            value: 'paintball-seven.vercel.app/',
           },
         ],
         destination: 'https://gromzone.com/:path*',
