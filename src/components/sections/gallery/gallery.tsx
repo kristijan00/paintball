@@ -12,6 +12,13 @@ const images = [
   '/slika-4.webp',
   '/slika-5.webp',
   '/slika-6.webp',
+  '/slika-7.webp',
+  '/slika-10.webp',
+  '/slika-12.webp',
+  '/slika-14.webp',
+  '/slika-15.webp',
+  '/slika-17.webp',
+  '/slika-18.webp',
 ];
 
 const Gallery = () => {
@@ -42,7 +49,10 @@ const Gallery = () => {
               alt={`Gallery ${i}`}
               width={800}
               height={500}
-              className={`${styles.image} rounded-xl object-cover`}
+              className={`${styles.image} rounded-xl`}
+              style={{
+                objectFit: 'cover',
+              }}
             />
           </div>
         ))}

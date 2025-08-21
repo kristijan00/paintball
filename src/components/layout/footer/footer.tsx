@@ -11,7 +11,9 @@ const Footer = () => {
           <LocateFixed size={24} className={styles.logo} />
           <div className={styles.content}>
             <h4>Adresa</h4>
-            <p>GromZone, Ul. dr. Franje Tuđmana 5, 35000, Gromačnik</p>
+            <p>GromZone, Ul. dr. Franje Tuđmana 5, 35000, Gromačnik
+              <br />
+              Vinogorska Ulica, 35000, Slavonski Brod</p>
           </div>
         </div>
 
@@ -43,7 +45,7 @@ const Footer = () => {
           <a href="" target="_blank" rel="noopener noreferrer" aria-label="TikTok link" className={styles.icon}>
             <SiTiktok color="#000000" />
           </a>
-          <a href="https://google.com/search?q=GromZone" target="_blank" rel="noopener noreferrer" aria-label="Google link" className={styles.icon}>
+          <a href="https://google.com/search?q=GromZone+paintball" target="_blank" rel="noopener noreferrer" aria-label="Google link" className={styles.icon}>
             <SiGoogle color="#4285F4" />
           </a>
         </div>
