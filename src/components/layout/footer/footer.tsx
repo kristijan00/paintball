@@ -11,7 +11,7 @@ const Footer = () => {
           <LocateFixed size={24} className={styles.logo} />
           <div className={styles.content}>
             <h4>Adresa</h4>
-            <p>GromZone, Ul. dr. Franje Tuđmana 5, 35000, Gromačnik
+            <p>GromZone, Ul. dr. Franje Tuđmana 5, 35000, Gromačnik,
               <br />
               Vinogorska Ulica, 35000, Slavonski Brod</p>
           </div>
