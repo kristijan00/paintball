@@ -19,6 +19,12 @@ const images = [
   '/slika-15.webp',
   '/slika-17.webp',
   '/slika-18.webp',
+  '/slika-19.webp',
+  '/slika-20.webp',
+  '/slika-21.webp',
+  '/slika-22.webp',
+  '/slika-23.webp',
+  '/slika-24.webp',
 ];
 
 const Gallery = () => {
