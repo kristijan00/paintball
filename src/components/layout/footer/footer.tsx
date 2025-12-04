@@ -39,10 +39,10 @@ const Footer = () => {
           <a href="https://www.instagram.com/gromzone.paintball/" aria-label="Instagram link" target="_blank" rel="noopener noreferrer" className={styles.icon}>
             <SiInstagram color="#E4405F" />
           </a>
-          <a href="" target="_blank" rel="noopener noreferrer" aria-label="Facebook link" className={styles.icon}>
+          <a href="" target="_blank" rel="noopener noreferrer" aria-label="Facebook link" className={`${styles.icon} ${styles.disabled}`}>
             <SiFacebook color="#1877F2" />
           </a>
-          <a href="" target="_blank" rel="noopener noreferrer" aria-label="TikTok link" className={styles.icon}>
+          <a href="" target="_blank" rel="noopener noreferrer" aria-label="TikTok link" className={`${styles.icon} ${styles.disabled}`}>
             <SiTiktok color="#000000" />
           </a>
           <a href="https://google.com/search?q=GromZone+paintball" target="_blank" rel="noopener noreferrer" aria-label="Google link" className={styles.icon}>
