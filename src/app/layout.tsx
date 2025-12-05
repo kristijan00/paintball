@@ -35,10 +35,14 @@ export const metadata: Metadata = {
   title: 'GromZone Paintball | Slavonski Brod',
   description: 'Najbolji paintball teren u Slavonskom Brodu. Rezervirajte svoju avanturu danas!',
   icons: {
-    icon: '/icon-Photoroom.webp',
-    shortcut: '/icon-Photoroom.webp',
-    apple: '/icon-Photoroom.webp',
+    icon: [
+      { url: '/favicon.ico', sizes: 'any' },
+      { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+    ],
+    apple: '/apple-touch-icon.png',
   },
+  manifest: '/site.webmanifest',
   keywords: [
     'paintball Slavonski Brod',
     'paintball teren Slavonski Brod', 
@@ -54,7 +58,7 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'hr_HR',
     siteName: 'GromZone',
-    url: 'https://paintball-seven.vercel.app/',
+    url: 'https://gromzone.com/',
   },
 };
 
@@ -64,7 +68,7 @@ const RootLayout = ({
   children: React.ReactNode;
 }>) => {
   return (
-    <html lang="en">
+    <html lang="hr">
       <body className={`${bebas.variable} ${oswald.variable} ${roboto.variable}`}>
         <Header />
         {children}
